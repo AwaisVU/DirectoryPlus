@@ -11,6 +11,7 @@ export default function FavouriteContacts(props) {
       <div className="p2">
         {props.list.map((tempContact, Index) => (
           <Contact
+            updateContact={props.updateContact}
             favClick={props.favClick}
             delContact={props.delContact}
             key={Index}

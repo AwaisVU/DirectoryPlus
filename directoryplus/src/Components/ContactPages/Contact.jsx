@@ -18,7 +18,7 @@ export default function Contact(props) {
             </button>
         </div>
         <div className='col-3'>
-            <button className='btn btn-primary btn-sm-2'>
+            <button onClick={()=>props.updateContact(props.tempContact)} className='btn btn-primary btn-sm-2'>
                 <i className="bi bi-pencil-square"></i>
             </button>
             <button onClick={()=>props.delContact(props.tempContact.id)} className='btn btn-danger btn-sm-2'>
